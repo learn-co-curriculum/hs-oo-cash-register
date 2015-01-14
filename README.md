@@ -149,6 +149,74 @@ Then, we have to add the item(s) the customer bought to the `@items` array. Let'
 
 `quantity` is a variable that stores an integer, in the case of our example, storing 5. Calling `quantity.times do`, is like saying, hey ruby do this thing 5 times. In this case, we're putting the item the customer bought into the `@items` array, five times.
 
+Lastly, this method calls `user_choice`, directing us back to the menu
+
+### See sold items
+
+```ruby
+  def see_sold_items
+    puts "You have sold:"
+    @items.each do |item|
+      puts item
+    end
+    user_choice
+  end
+``` 
+
+**This method is defined in the body of the class**
+
+This method gives the cashier the ability to see a list of all the items they've sold that day. This method iterates over the `@items` array by using the `.each` method. We then use `puts` to print out each item individually.
+
+Lastly, this method calls `user_choice`.
+
+### Return an item
+
+```ruby
+  def return_item
+    puts "What item is being returned"
+    item = gets.chomp
+    puts "How many of #{item} are being returned?"
+    number = gets.chomp.to_i
+    puts "How much did this item cost?"
+    cost = gets.chomp.to_i
+    amount_returning = number * cost
+    @total -= amount_returning
+    puts "Here is the change: #{amount_returning}"
+    number.times do
+      place = @items.index(item)
+      @items.delete(place)
+    end
+    user_choice
+  end
+```
+
+**This method is defined in the body of the class**
+
+This method allows the cashier to return items for a customer. This method first prompts the cashier to enter what item the customer is returning, and stores that item in a variable `item`. 
+
+The method then prompts the cashier to enter the number of items being returned, and stores it in a variable `number`. Lastly, `return_item` prompts the cashier to enter the cost of the item, storing it as an integer in the variable `cost`.
+
+Next, we multiply the number of items returning by the cost of the item and store the product in `amount_returning`. That amount has to get subtracted from `@total`, which we do on the next line. This method then tells the user how much money they are getting back.
+
+Lastly, we have to remove the items from the `@items` array. By using the `.times` method, we call `@items.delete(item)`. We call `.delete` once for each item that is getting deleted. If a customer is returning 2 candles, `"candle"` would get deleted twice from the array.
+
+Finally, this method calls `user_choice`, bringing the cashier back to the menu.
+
+### Check total
+
+```ruby
+  def check_total
+    puts "You started with $100. You have since sold $#{@total - 100} worth of stuff"
+    user_choice
+  end
+```
+
+**This method is defined in the body of the class**
+
+The `check_total` method allows a cashier to check the total dollar amount they've sold that day. This method prints outs the value of `@total` minus 100. Because `@total` was originally storing $100.
+
+***And that's all folks!*** You've successfully built an object-oriented payment app!
+
 
 
 
