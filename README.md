@@ -9,7 +9,7 @@
 
 <img src="https://s3.amazonaws.com/after-school-assets/colorful-cash-register.gif" alt="Cash Register" height="200" align="right" hspace="20">
 
-We've become masters of object-orientation, even stepped up to the plate and built a payment app, our very only e-cash register. Let's recap how we did it!
+We've become masters of object orientation, even stepped up to the plate and built a payment app, our very only e-cash register. Let's recap how we did it!
 
 ### The point of it all
 
