@@ -35,7 +35,7 @@ describe 'CashRegister' do
     end
 
     it 'accepts a quantity as an *optional* third argument' do
-      expect(cash_register.add_item("book", 5.00, 3)).to change(cash_register.total).by(15.00)
+      expect{cash_register.add_item("book", 5.00, 3)}.to change{cash_register.total}.by(15.00)
     end
 
     it "doesn't forget about the previous total" do
