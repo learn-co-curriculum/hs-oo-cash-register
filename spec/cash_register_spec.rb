@@ -12,7 +12,7 @@ describe 'CashRegister' do
     end
 
     it 'takes an *optional* employee discount argument, @discount, on initialization' do
-      expect(cash_register_with_discount.discount).to eq(20)
+      expect(cash_register_with_discount.instance_variable_get(:@discount)).to eq(20)
     end
   end
 
