@@ -5,7 +5,7 @@
 ---
 
 ### Cha Ching!
-<img src="https://after-school-assets.s3.amazonaws.com/cash_register.gif" alt="Cash Register" height="200" align="right" hspace="20"> You're going to create an object-oriented cash register than can add items of varying quantities and prices, calculate discounts, and keep track of what's been added to it.
+<img src="https://after-school-assets.s3.amazonaws.com/cash_register.gif" alt="Cash Register" height="200" align="right" hspace="20"> You're going to create an object-oriented cash register that can add items of varying quantities and prices, calculate discounts, and keep track of what's been added to it.
 
 ### Instructions
 Follow along with the specs in `spec/cash_register_spec.rb`. Remember to run your specs in the terminal by entering `rspec` from the main directory of this lab.
