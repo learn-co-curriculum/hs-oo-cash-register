@@ -1,9 +1,3 @@
----
-  tags: ruby, bash, git, kids, oo, oop, object-orientation
-  languages: ruby, git, bash
-  level: 1
----
-
 ### Cha Ching!
 
 Amazon needs a new payment app. You're a Director of Engineering at Amazon, and the CTO just came to you and asked you to rewrite their payment app in time for their Christmas rush. You now need to build an app that can support 426 purchases per second. We've given you
