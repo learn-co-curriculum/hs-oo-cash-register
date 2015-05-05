@@ -5,12 +5,15 @@
 ---
 
 ### Cha Ching!
-<img src="https://after-school-assets.s3.amazonaws.com/cash_register.gif" alt="Cash Register" height="200" align="right" hspace="20"> You're going to create an object-oriented cash register that can add items of varying quantities and prices, calculate discounts, and keep track of what's been added to it.
+<img src="https://after-school-assets.s3.amazonaws.com/cash_register.gif" alt="Cash Register" height="200" align="right" hspace="20"> 
+
+Amazon needs a new payment app. You're a Director of Engineering at Amazon, and the CTO just came to you and asked you to rewrite their payment app in time for their Christmas rush. You now need to build an app that can support 426 purchases per second. We've given you
+
 
 ### Instructions
-Follow along with the specs in `spec/cash_register_spec.rb`. Remember to run your specs in the terminal by entering `rspec` from the main directory of this lab.
+Follow along with the specs in `spec/amazon_transaction_spec.rb`. Remember to run your specs in the terminal by entering `rspec` from the main directory of this lab.
 
-Write your code in the `cash_register.rb` file.
+Write your code in the `amazon_transaction.rb` file.
 
 Take it one step at a time, peeps!
 
