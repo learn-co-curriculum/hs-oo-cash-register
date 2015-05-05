@@ -5,7 +5,6 @@
 ---
 
 ### Cha Ching!
-<img src="https://after-school-assets.s3.amazonaws.com/cash_register.gif" alt="Cash Register" height="200" align="right" hspace="20"> 
 
 Amazon needs a new payment app. You're a Director of Engineering at Amazon, and the CTO just came to you and asked you to rewrite their payment app in time for their Christmas rush. You now need to build an app that can support 426 purchases per second. We've given you
 
