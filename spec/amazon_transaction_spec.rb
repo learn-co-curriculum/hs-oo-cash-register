@@ -1,6 +1,7 @@
 describe 'AmazonTransaction' do
   let(:amazon_transaction) { AmazonTransaction.new }
   let(:amazon_transaction_with_discount) { AmazonTransaction.new(20) }
+ 
 
   describe '::new' do
     it 'sets an instance variable for @total on initialization to zero' do
@@ -84,11 +85,41 @@ describe 'AmazonTransaction' do
     end
   end
 
-  # BONUS: uncomment out test to work on this part
+
+  # BONUS: uncomment out each test to work on this part
   # describe '#void_last_transaction' do
   #   it 'subtracts the last transaction from the total' do
   #     amazon_transaction.add_item("tomato", 1.76)
   #     expect{amazon_transaction.void_last_transaction}.to change{amazon_transaction.total}.by(-1.76)
   #   end
   # end
+
+  #Completing this test requires knowledge of class variables, class methods and self. 
+  # describe '.transaction_codes' do
+  #  it 'generates a random, six-digit code when a transaction is created' do
+  #       expect(amazon_transaction.transaction_code).to be > 100000
+  #       expect(amazon_transaction.transaction_code).to be < 999999
+  #    end
+
+  # it 'at the creation of a new transaction it saves each transaction\'s code to a class variable called transaction_codes' do
+  #    expect(AmazonTransaction.transaction_codes.length).to eq(15)
+  #  end
+  # end
+
+  #  describe '#print_receipt' do
+  #     it 'prints the customer\'s receipt to a .txt file' do
+  #       amazon_transaction_with_discount.add_item("cereal", 3.45)
+  #       amazon_transaction_with_discount.add_item("orange juice", 2.00)
+  #       amazon_transaction_with_discount.apply_discount
+  #       amazon_transaction_with_discount.print_receipt
+  #       receipt = File.read("receipt.txt")
+  #       expect(receipt).to eq("Your Receipt\nItems:\ncereal, orange juice\nDiscount applied: 20%\nTotal: $4.36")
+  #     end
+  # end
 end
+
+
+
+
+
+

@@ -14,7 +14,13 @@ Take it one step at a time, peeps!
 Build out **four more methods** of your choice for your cash register. Think about what functionality would be useful. Maybe you want to build out a `give_change` method that will give a customer change if they don't have the exact amount of money for an item. Or maybe you want the register to print a receipt by `puts`ing the details of the transaction. How would you build a `print_receipt` method? 
 
 ### Bonus
-Build a method called `void_last_transaction` that will remove the last transaction from the total. You'll need to make an additional attribute accessor and keep track of that last transaction amount somehow. Hint: in what method of the class are you working with an individual item?
+Go to `amazon_transaction_spec.rb` and uncomment the extra tests. Each bonus increases in difficulty and cover new concepts we haven't taught you in class yet. If you've made it to the bonuses then you already know how to build the business logic or back-end of an app. Hooray! These provide just a little extra push if you're looking for even more of a challenge. 
+
+Bonus 1: Build a method called `void_last_transaction` that will remove the last transaction from the total. You'll need to make an additional attribute accessor and keep track of that last transaction amount somehow. Hint: in what method of the class are you working with an individual item?
+
+Bonus 2: Amazon keeps a history of it's user's transactions so they can access them later in case the customer needs a refund or wants to see past purchases. For this challenge, you'll need to add a randomly generated numeric code as an attribute to the transaction. Then, you'll need to use a class variable to store each transaction's code so Amazon can easily look up each transaction later.
+
+Bonus 3: Want to make your cash register even more realistic? We can use Ruby to write text into different types of files. So instead of printing to the screen you could write a print_receipt method that can actaully put the transaction details in a receipt.txt file, which your customers can print out or save. to complete this bonus you'll need to do a bit of research on how to do this (hint: look up File is a built-in Ruby class!)
 
 ***And that's all folks!*** You've successfully built an object-oriented cash register!
 
