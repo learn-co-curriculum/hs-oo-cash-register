@@ -12,7 +12,7 @@ describe 'AmazonTransaction' do
       expect(amazon_transaction.instance_variable_get(:@items)).to match_array([])
     end
 
-    it 'takes an *optional* employee discount argument, @discount, on initialization' do
+    it 'takes an *optional* employee discount argument (using a default argument), @discount, on initialization' do
       expect(amazon_transaction_with_discount.instance_variable_get(:@discount)).to eq(20)
     end
   end
