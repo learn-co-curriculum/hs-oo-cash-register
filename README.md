@@ -11,7 +11,7 @@ Write your code in the `amazon_transaction.rb` file.
 Take it one step at a time, peeps!
 
 ### After You Pass All The Tests...
-Build out **four more methods** of your choice for your cash register. Think about what functionality would be useful. Maybe you want to build out a `give_change` method that will give a customer change if they don't have the exact amount of money for an item. Or maybe you want the register to print a receipt by `puts`ing the details of the transaction. How would you build a `print_receipt` method? 
+Build out **four more methods** of your choice for your cash register. Think about what functionality would be useful. Maybe you want to build out a `amazon_prime` method that will give a customer free shipping if they have Amazon prime. Or maybe you want the register to print a receipt by `puts`ing the details of the transaction to go in the box with the user's purchase. How would you build a `print_receipt` method? Maybe there is a `gift_box` method that prints out a guest receipt without the cost of the item, and gives the user an option to add a note.
 
 ### Bonus
 Go to `amazon_transaction_spec.rb` and uncomment the extra tests. Each bonus increases in difficulty and cover new concepts we haven't taught you in class yet. If you've made it to the bonuses then you already know how to build the business logic or back-end of an app. Hooray! These provide just a little extra push if you're looking for even more of a challenge. 
