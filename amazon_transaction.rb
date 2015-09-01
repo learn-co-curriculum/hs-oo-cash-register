@@ -4,7 +4,7 @@
 class AmazonTransaction
 
 
-  attr_accessor :total, :items, :transaction_code
+  attr_accessor :total, :items, :transaction_code, :last_purchase
   @@transaction_codes = []
 
   def initialize(discount=nil)
@@ -15,8 +15,17 @@ class AmazonTransaction
     @@transaction_codes << @transaction_code
   end
 
+  # def add_item(item, price, quantity=1)
+  #   @total += price * quantity
+  #   quantity.times do 
+  #     @items << item
+  #   end
+  # end
+
+  #FOR CANCEL_ORDER BONUS:
   def add_item(item, price, quantity=1)
     @total += price * quantity
+    @last_purchase = price * quantity
     quantity.times do 
       @items << item
     end
@@ -40,6 +49,10 @@ class AmazonTransaction
 
   def self.transaction_codes
     @@transaction_codes
+  end
+
+  def cancel_order
+    @total -= @last_purchase
   end
 
 end

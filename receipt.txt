@@ -1,0 +1,5 @@
+Your Receipt
+Items:
+cereal, orange juice
+Discount applied: 20%
+Total: $4.36
