@@ -87,7 +87,7 @@ describe 'AmazonTransaction' do
 
 
   # BONUS: uncomment out each test to work on this part
-  # describe '#void_last_transaction' do
+  # describe '#cancel_order' do
   #   it 'subtracts the last transaction from the total' do
   #     amazon_transaction.add_item("tomato", 1.76)
   #     expect{amazon_transaction.void_last_transaction}.to change{amazon_transaction.total}.by(-1.76)
