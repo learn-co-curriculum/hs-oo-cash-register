@@ -90,7 +90,7 @@ describe 'AmazonTransaction' do
   # describe '#cancel_order' do
   #   it 'subtracts the last transaction from the total' do
   #     amazon_transaction.add_item("tomato", 1.76)
-  #     expect{amazon_transaction.void_last_transaction}.to change{amazon_transaction.total}.by(-1.76)
+  #     expect{amazon_transaction.cancel_order}.to change{amazon_transaction.total}.by(-1.76)
   #   end
   # end
 
@@ -102,7 +102,7 @@ describe 'AmazonTransaction' do
   #    end
 
   # it 'at the creation of a new transaction it saves each transaction\'s code to a class variable called transaction_codes' do
-  #    expect(AmazonTransaction.transaction_codes.length).to eq(15)
+  #    expect(AmazonTransaction.transaction_codes.length).to eq(16)
   #  end
   # end
 
