@@ -22,7 +22,7 @@ Bonus 2: Amazon keeps a history of it's user's transactions so they can access t
 
 Bonus 3: Want to make your cash register even more realistic? We can use Ruby to write text into different types of files. So instead of printing to the screen you could write a print_receipt method that can actually put the transaction details in a receipt.txt file, which your customers can print out or save. to complete this bonus you'll need to do a bit of research on how to do this (hint: look up File is a built-in Ruby class!)
 
-***And that's all folks!*** You've successfully built an object-oriented cash register!
+***And that's all folks!*** You've successfully built an object-oriented payment app!
 
 ### Resources
 * [Codecademy](http://www.codecademy.com/dashboard) - [Banking on Ruby](http://www.codecademy.com/courses/ruby-beginner-en-32cN3/0/1)
