@@ -26,3 +26,5 @@ Bonus 3: Want to make your cash register even more realistic? We can use Ruby to
 
 ### Resources
 * [Codecademy](http://www.codecademy.com/dashboard) - [Banking on Ruby](http://www.codecademy.com/courses/ruby-beginner-en-32cN3/0/1)
+
+<a href='https://learn.co/lessons/hs-oo-cash-register' data-visibility='hidden'>View this lesson on Learn.co</a>
