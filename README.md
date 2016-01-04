@@ -1,6 +1,6 @@
 ### Cha Ching!
 
-Amazon needs a new payment app. You're a Director of Engineering at Amazon, and the CTO just came to you and asked you to rewrite their payment app in time for their Christmas rush. You now need to build an app that can support 426 purchases per second. We've given you
+Amazon needs a new payment app. You're a Director of Engineering at Amazon, and the CTO just came to you and asked you to rewrite their payment app in time for their Christmas rush. You now need to build an app that can support 426 purchases per second. 
 
 
 ### Instructions
@@ -20,7 +20,7 @@ Bonus 1: Build a method called `cancel_order` that will remove the last transact
 
 Bonus 2: Amazon keeps a history of it's user's transactions so they can access them later in case the customer needs a refund or wants to see past purchases. For this challenge, you'll need to add a randomly generated numeric code as an attribute to the transaction. Then, you'll need to use a class variable to store each transaction's code so Amazon can easily look up each transaction later.
 
-Bonus 3: Want to make your cash register even more realistic? We can use Ruby to write text into different types of files. So instead of printing to the screen you could write a print_receipt method that can actually put the transaction details in a receipt.txt file, which your customers can print out or save. to complete this bonus you'll need to do a bit of research on how to do this (hint: look up File is a built-in Ruby class!)
+Bonus 3: Want to make your cash register even more realistic? We can use Ruby to write text into different types of files. So instead of printing to the screen you could write a print_receipt method that can actually put the transaction details in a receipt.txt file, which your customers can print out or save. To complete this bonus you'll need to do a bit of research on how to do this (hint: look up File; it's a built-in Ruby class!)
 
 ***And that's all folks!*** You've successfully built an object-oriented payment app!
 
